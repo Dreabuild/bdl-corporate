@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'adora';
-    src: url('/fonts/Li Ador Noirrit Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "adora";
+  src: url("/fonts/Li Ador Noirrit Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'adoraBold';
-    src: url('/fonts/Li Ador Noirrit Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "adoraBold";
+  src: url("/fonts/Li Ador Noirrit Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-margin:0;
-padding:0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
-body{
-    font-family: 'adora';
+body {
+  font-family: "adora";
+  overflow-x: hidden;
 }

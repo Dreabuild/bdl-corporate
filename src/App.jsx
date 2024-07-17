@@ -1,29 +1,35 @@
-import Banner from './components/Banner'
-import HelpingCompanies from './components/HelpingCompanies'
-import HelpSection from './components/HelpSection'
-import InfoSection from './components/InfoSection'
+import { useEffect } from "react";
+import Banner from "./components/Banner";
+import DownloadApp from "./components/DownloadApp";
+import Footer from "./components/Footer";
+import HelpingCompanies from "./components/HelpingCompanies";
+import HelpSection from "./components/HelpSection";
+import InfoSection from "./components/InfoSection";
+import JoinTeam from "./components/JoinTeam";
+import Media from "./components/Media";
+import Navbar from "./components/Navbar";
+import PhotoGallery from "./components/PhotoGallery";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-
+  useEffect(() => {
+    AOS.init({ disable: "mobile" });
+  }, []);
   return (
     <div>
-      <header className='max-w-[1500px] px-4 w-full mx-auto py-4'>
-        <div className="container mx-auto flex justify-between items-center">
-          <img
-            src="https://i.ibb.co/S5cZpQr/Bloodlink-Assests-1.png"
-          alt="logo"/>
-          <div className="flex gap-x-4 items-center">
-            <button className="bg-none text-[#000] lg:md:text-[20px] text-[18px]">হোম</button>
-            <button className="bg-[#BF0000] text-[#fff] lg:md:text-[20px] text-[18px] px-4 py-2">রক্তের আবেদন</button>
-          </div>
-        </div>
-      </header>
+      <Navbar />
       <Banner />
       <HelpingCompanies />
       <InfoSection />
-      <HelpSection/>
+      <HelpSection />
+      <PhotoGallery />
+      <Media />
+      <JoinTeam />
+      <DownloadApp />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
