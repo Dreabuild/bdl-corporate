@@ -46,7 +46,7 @@ const JoinTeam = () => {
             data-aos-delay={300}
             data-aos-duration="500"
           >
-            আমাদের টিম এ যোগ দিন
+            আমাদের সম্পর্কে রিভিউ দিন
           </h1>
           <div className="flex -space-x-4 items-center justify-center">
             {people.map((logo, index) => (
@@ -63,7 +63,7 @@ const JoinTeam = () => {
             ))}
           </div>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfSeeOFR4-5JlyipdLYf30lcypPDdO2iF22-aT_ylTy-5bcGw/viewform?usp=sf_link"
+            href="https://www.bloodlink.app/review"
             target="_blank"
             className="bg-transparent border border-white space-x-2 text-white px-8 py-3  flex items-center mx-auto w-min text-nowrap"
             data-aos="fade-up"
@@ -71,7 +71,7 @@ const JoinTeam = () => {
             data-aos-delay={500}
             data-aos-duration="500"
           >
-            <span>যোগ দিন </span>
+            <span className="text-nowrap">রিভিউ দিন </span>
             <IoIosArrowForward />
           </a>
         </div>

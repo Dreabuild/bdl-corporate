@@ -12,7 +12,7 @@ const HelpSection = () => {
       title: "Chatbot",
       image: "https://i.ibb.co/9p0nX5r/chat.png",
       buttonText: "ব্যবহার করুন",
-      buttonUrl: "https://www.bloodlink.app/",
+      buttonUrl: "https://shorturl.at/eiqlg",
     },
     {
       title: "Helpline Number",
